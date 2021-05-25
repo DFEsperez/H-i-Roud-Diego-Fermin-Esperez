@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formulario de Registro</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/Menu.css">
+</head>
+<body>
+ 
+    <div id="contenedor-for">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="Inicio" href="index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="formularioderegistro.html">Regístrate aquí <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria de fotos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="Cerbeza.html">Cerbezas</a></li>
+                        <li><a class="dropdown-item" href="vinos.html">vinos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="aperitivos.html">Aperitivos</a></li>
+                    </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                        <form class="d-flex">
+
+                        </form>
+            </div>
+        </nav>
+       
+        <section class="form-registro">
+           <h4>Formulario de Registro</h4>
+                <input class="control" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                <input class="control"  type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+                <input class="control"  type="email" name="E-mail" id="E-mail" placeholder="Ingrese su E-mail">
+                <input class="control" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su Contraseña">
+            <br>
+                    <span>Hombre</span>
+                       <input type="radio" name="genero" value="Hombre">
+                    <span>Mujer</span>
+                       <input type="radio" name="genero" value="Mujer">
+                    <span>Indefinido</span>
+                       <input type="radio" name="genero" value="Indefinido">
+               <br>
+               <br>
+                    <div class="boton-form">
+                       <input class="botton" type="submit" value="Registrar" >
+                       <input class="boton-reset" type="reset" value="Limpiar"> 
+                    </div>
+
+        </section>
+    </div>
+  
+</body>
+</html>

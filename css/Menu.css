@@ -1,0 +1,299 @@
+
+/*formulario de registro*/
+#contenedor-for{
+    background-color:cornsilk;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-registro{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.form-registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.control{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid # 1f53c5;
+    font-family: "calibri";
+    font-size: 18px;
+    color: white;
+}
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.form-registro a{
+    color: white;
+    text-decoration: none;
+}
+.form-resgitro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.botton{
+    width: 100%;
+    background: #1f53c5;
+    border:none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.botton{
+    color:white;
+    border-bottom-color:blue;
+    
+}
+.boton-reset{
+    border-bottom-color: orange;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.input , .boton-submit, .boton-reset{
+    transition: all .5s;
+}
+
+/*Galeria de Fotos*/
+
+#contenedor-galeria{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+   
+
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+/*Cerbeza*/
+#contenedor-cerbeza{
+    box-sizing: border-box;
+    background-image:url(../img/portad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: grey;
+}
+#contenedor-cerbeza ,header{
+    background-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    height:auto;
+    
+}
+
+#cerbeza,.grid{
+    display:grid;
+    padding-top: 20px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+#cerbeza,.grid img{
+    width: 100%;
+    margin: auto;
+    border: 3px solid white;
+    margin: auto;
+    height: 100%;
+}
+/*Vinos*/
+
+#contenedor-vinos{
+    box-sizing: border-box;
+    
+}
+#contenedor-vinos ,header{
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    height: auto;
+}
+
+#vinos,.grid{
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+} 
+#vinos,.grid img{
+    width: 100%;
+    margin: auto;
+    border: 3px solid white;
+    height: 100%;
+}
+/*Aperitivos*/
+
+#contenedor-aperitivos{
+    box-sizing: border-box;
+    background-image:url(../img/portad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: grey;
+}
+#contenedor-aperitivos,header{
+    background-color: white;
+    
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    height:auto;
+    
+}
+
+#aperitivos,.grid{
+    display:grid;
+    padding-top: 20px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+#aperitivos,.grid img{
+    width: 100%;
+    margin: auto;
+    border: 3px solid white;
+    margin: auto;
+    height: 100%;
+}
+/*Contacto*/
+
+#contenedor-contacto{
+    background-color:#55eff5;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+#datos {
+    background-color: cadetblue
+}
+#datos ,h1{
+    text-align: center;
+    height: 100px;
+    padding: 20px;
+    text-decoration:underline;
+    }
+#datos ,h2{
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+} 
+#datos ,p{
+    text-align: center;
+    text-align-last: inherit;
+    padding:1px;
+}
+#datos ,img-fondo{
+    padding: 20px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+    
